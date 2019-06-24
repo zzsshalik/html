@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>piskel-clone</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="tools-container">
+
+            <ul class="main-tools">
+                <li class="pen tool" data-toggle="tooltip" title="текст подсказки" data-placement="right"></li>
+                <li class="eraser tool" data-toggle="tooltip" title="другой текст подсказки"></li>
+                <li class="mirror-pen tool"></li>
+                <li class="same-color-bucket tool"></li>
+                <li class="stroke tool"></li>
+                <li class="circle tool"></li>
+                <li class="rectangle tool"></li>
+                <li class="lighten tool"></li>
+                <li class="dithering tool"></li>
+                <li class="bucket tool"></li>
+                <li class="move tool"></li>
+                <li class="shape-selection tool"></li>
+            </ul>
+            <div class="colors-container">
+
+                <input type="color" value="#ff8000" class="firstColor">
+                <input type="color" value="#008000" class="secondColor">
+
+            </div>
+        </div>
+        <div class="frames">
+            <div class="preview-list-scroller">
+                <ul class="preview-list">
+                </ul>
+                <button class="add-new-frame">+</button>
+            </div>
+        </div>
+
+        <div class="block-container">
+            <canvas class="mainCanvas" width="32" height="32">No canvas</canvas>
+            <canvas class="layers-canvas" width="32" height="32">No canvas</canvas>
+            <canvas class="live-tools-canvas" width="32" height="32">No canvas</canvas>
+            <canvas class="skin-canvas" width="32" height="32">No canvas</canvas>
+
+        </div>
+        <div class="scale-container">
+            <ul class="ul-scale-container">
+                <li class="32-scale">32</li>
+                <li class="64-scale">64</li>
+                <li class="128-scale">128</li>
+            </ul>
+            <p class="canvas-size">[32х32]</p>
+            <p class="mouse-position">out</p>
+        </div>
+
+        <div class="preview">
+            <div class="preview-block">
+                <div class="img-preview-block">
+                    <p class="fps-value">1</p>
+                    <button class="full-screen">Full scr</button>
+                </div>
+            </div>
+            <input type="range" min="1" max="60" value="1" class="fps-range">
+            <div class="additional-tools">
+                <ul class="additional-tools">
+                    <li class="flip tool"></li>
+                    <li class="align tool"></li>
+                    <li class="rotate tool"></li>
+                    <li class="inverse tool"></li>
+                </ul>
+            </div>
+            <div class="layer-management">
+                <h3>layers</h3>
+                <div class="layers-toolbox">
+                    <button class="add-layer">+</button>
+                    <button class="delete-layer">-</button>
+                    <button class="up-layer">↑</button>
+                    <button class="down-layer">↓</button>
+                </div>
+                <ul>
+                    <li class="layer-0 selected-layer" data-part="0">Layer 1 main</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="save">
+        <button class="gif-local-fs" id="gif-local-fs"> save gif</button>
+        <button class="apng-local-fs" id="apng-local-fs"> save apng</button>
+        <button class="upload-to-giphy" id="upload-to-giphy">Upload to GIPHY</button>
+        <button class="hotkeys" id="hotkeys">hotkeys</button>
+    </div>
+    <div id="modal-window">
+        <div class="popup-content" id="popup-content">
+            <div class="popup-header" id="popup-header">
+                <span> <h2>Hotkeys setting</h2> only A-Z symbols</span>
+                <span class="close" id="close">&times; </span>
+            </div>
+            <div class="popup-body" id="popup-body"></div>
+            <div class="container-modal-submit" id="container-modal-submit">
+                <button class="modal-submit" id="modal-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="appcce0eb4ac6b9556f71bb.bundle.js?cce0eb4ac6b9556f71bb"></script></body>
+
+</html>
