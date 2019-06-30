@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
     <title>piskel-clone</title>
 </head>
 
@@ -45,7 +46,6 @@
 
         <div class="block-container">
             <canvas class="mainCanvas" width="32" height="32">No canvas</canvas>
-            <canvas class="layers-canvas" width="32" height="32">No canvas</canvas>
             <canvas class="live-tools-canvas" width="32" height="32">No canvas</canvas>
             <canvas class="skin-canvas" width="32" height="32">No canvas</canvas>
 
@@ -84,18 +84,30 @@
                     <button class="up-layer">↑</button>
                     <button class="down-layer">↓</button>
                 </div>
-                <ul>
+                <ul class="layers-constainer" id="layers-constainer">
                     <li class="layer-0 selected-layer" data-part="0">Layer 1 main</li>
                 </ul>
+            </div>
+            <div class="export-features">
+                <button class="gif-local-fs" id="gif-local-fs"> save .gif</button>
+                <button class="apng-local-fs" id="apng-local-fs"> save .apng</button>
+                <button class="save-sipkel" id="save-sipkel">save .sipkel</button>
+                <button class="save-piskel" id="save-piskel">save .piskel</button>
+                <button class="upload-to-giphy" id="upload-to-giphy">Upload to GIPHY</button>
+                <button class="hotkeys" id="hotkeys">hotkeys</button>
             </div>
         </div>
 
     </div>
-    <div class="save">
-        <button class="gif-local-fs" id="gif-local-fs"> save gif</button>
-        <button class="apng-local-fs" id="apng-local-fs"> save apng</button>
-        <button class="upload-to-giphy" id="upload-to-giphy">Upload to GIPHY</button>
-        <button class="hotkeys" id="hotkeys">hotkeys</button>
+    <div class="header-menu">
+        <input type="file" id="import-own-format" accept=".sipkel,.piskel">
+        <input type="file" id="export-to-giphy" accept=".gif">
+        <button class="google-auth" id="google-auth">Google SignIn</button>
+        <button class="google-log-out" id="google-log-out">Google Logout</button>
+        <div class="user-data" id="user-data">
+            <img src="" alt="user-avatar" class="user-data-avatar" id="user-data-avatar">
+            <p class="user-data-name" id="user-data-name"></p>
+        </div>
     </div>
     <div id="modal-window">
         <div class="popup-content" id="popup-content">
@@ -109,6 +121,6 @@
             </div>
         </div>
     </div>
-<script type="text/javascript" src="appcce0eb4ac6b9556f71bb.bundle.js?cce0eb4ac6b9556f71bb"></script></body>
+<script type="text/javascript" src="appfebfee65c5ad8681d8fe.bundle.js?febfee65c5ad8681d8fe"></script></body>
 
 </html>
